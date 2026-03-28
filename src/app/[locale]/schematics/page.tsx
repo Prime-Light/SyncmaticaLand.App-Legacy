@@ -37,7 +37,7 @@ export default function SchematicsIndex() {
             </section>
 
             {/* Search & Filter Section */}
-            <section className="bg-background/95 supports-[backdrop-filter]:bg-background/60 sticky top-0 z-10 backdrop-blur">
+            <section>
                 <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
                     {/* Search Bar */}
                     <div className="relative mb-6">
