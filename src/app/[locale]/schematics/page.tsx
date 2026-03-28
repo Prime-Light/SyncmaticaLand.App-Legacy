@@ -1,33 +1,14 @@
 "use client";
 
 import { Radix, PrimeLight, ReactBits } from "@/components";
-import { FileUp, PackageOpen } from "lucide-react";
-import Link from "next/link";
 import { Fragment } from "react/jsx-runtime";
 
 const HAS_EVENT = true;
 const EVENT = {
-    title: "红石光潮节",
-    date: "4 月 1 日至 4 月 15 日",
-    description: [
-        "《投影共和国 · SyncmaticaLand 发行庆典 - Minecraft 红石光潮节》",
-        "4 月 1 日至 4 月 15 日期间，上传标有「红石科技」「生电」等标签的资源将获得额外推广支持",
-    ],
-    buttons: [
-        <Radix.Button asChild size="lg" className="bg-red-600 text-white hover:bg-red-600/80!" key="view">
-            <Link href="#" className="inline-flex items-center gap-2">
-                {/* /schematics/featured/tide-n-light */}
-                <PackageOpen className="size-4" />
-                立即查看
-            </Link>
-        </Radix.Button>,
-        <Radix.Button asChild size="lg" variant="outline" key="contribute">
-            <Link href="#" className="inline-flex items-center gap-2">
-                <FileUp className="size-4" />
-                立即投稿
-            </Link>
-        </Radix.Button>,
-    ],
+    title: "原理图市场",
+    date: "",
+    description: ["发现、分享和下载 Minecraft 原理图，探索无限创意的世界。", "在这里，建筑师们展示他们的杰作，玩家找到下一个伟大项目的灵感。"],
+    buttons: [],
 };
 
 export default function SchematicsIndex() {
@@ -35,8 +16,8 @@ export default function SchematicsIndex() {
         <main className="bg-background text-foreground relative overflow-x-hidden">
             {HAS_EVENT && (
                 <section className="relative h-[calc(100vh*0.8)] object-cover">
-                    <div className="absolute top-1/3 z-3 flex w-full -translate-x-2 -translate-y-1/4 flex-col items-center">
-                        <Radix.Typography.H1 className="atext-4xl translate-x-1 leading-tight font-bold text-red-500 text-shadow-[0_0_2px,0_0_6px,0_0_12px,0_0_24px] text-shadow-red-800 sm:text-5xl lg:text-6xl dark:text-red-600 dark:text-shadow-red-900">
+                    <div className="absolute top-1/2 left-1/2 z-3 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center">
+                        <Radix.Typography.H1 className="atext-4xl leading-tight font-bold text-red-500 text-shadow-[0_0_2px,0_0_6px,0_0_12px,0_0_24px] text-shadow-red-800 sm:text-5xl lg:text-6xl dark:text-red-600 dark:text-shadow-red-900">
                             <ReactBits.TextType loop={false} cursorCharacter="" className="tracking-widest!" text={EVENT.title} />
                         </Radix.Typography.H1>
                         <Radix.Typography.P className="text-center text-base leading-relaxed sm:text-lg">
