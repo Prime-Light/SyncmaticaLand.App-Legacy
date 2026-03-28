@@ -21,3 +21,4 @@ export { SectionCards } from "./dashboard/section-cards";
 export { SiteHeader } from "./dashboard/site-header";
 
 export { SchematicFeed } from "./schematics/feed";
+export { SchematicCard, type SchematicCardProps } from "./schematics/card";
